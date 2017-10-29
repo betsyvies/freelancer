@@ -219,10 +219,52 @@ img[alt="profile"] {
 }
 
 .container-form {
+    position: relative;
+    width: 50%;
+    transform: translateX(50%);
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.control-group {
+    background-color: transparent;
     width: 100%;
+    border-bottom: 1px solid #2c3e50;
 }
 
 .container-name {
-    
+    padding-bottom: 0.5em;
 }
 
+.container-email {
+    padding-bottom: 0.5em;
+}
+
+.container-phone {
+    padding-bottom: 0.5em;
+}
+
+.container-message {
+    padding-bottom: 0.5em;
+}
+
+.control-group label {
+    text-align: left;
+}
+
+.control-group input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 100%;
+}
+
+.container-message textarea {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 100%;
+}
