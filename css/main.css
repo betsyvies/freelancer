@@ -114,7 +114,7 @@ nav {
 
 nav a:active {
     background: #18bc9c;
-    padding: 0.5rem 1rem; 
+    padding: 0.7rem 0.5rem; 
     border-radius: 0.3rem;
     color:#fff
 }
@@ -122,6 +122,7 @@ nav a:active {
 nav a {
     margin: 0 0 0 15px;
     font-size: 1em;
+    letter-spacing: 1px;
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -187,7 +188,7 @@ img[alt="profile"] {
     margin-top: 98px;
 }
 
-.imagenes {
+.row {
     position: relative;
     width: 75%;
     margin-left: auto;
@@ -199,9 +200,43 @@ img[alt="profile"] {
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 30px;
+    overflow: hidden;
+    z-index: 50;
 }
 
-.imagenes img {
+.portfolio-link {
+    position: relative;
+    width: 100%;
+}
+
+.caption {
+    position: absolute;
+    width: 350px;
+    height: 253px;
+    background-color: rgba(24,188,156,.9);
+    transition: all .3s;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.portfolio-item:hover .caption{
+    transition: all 10s;
+    opacity: 0;
+    visibility:visible;
+}
+
+.caption-content {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    margin-left: 150px;
+    margin-top: -25px;
+    text-align: center;
+    color: #fff;
+
+}
+
+.row img {
     width: 350px;
     height: 253px;
 } 
@@ -343,7 +378,7 @@ img[alt="profile"] {
 }
 
 .container-group textarea {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Monserrat,sans-serif;
     background-color: transparent;
     border: none;
     outline: none;
