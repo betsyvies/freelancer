@@ -1,30 +1,74 @@
-/*
- * Estilos de tu proyecto
- */
-
+ 
  /*reusable classes*/
- *{
-     box-sizing: border-box;
- }
 
- body {
+*, ::after, ::before{
+     box-sizing: border-box;
+}
+
+body {
      margin: 0;
      padding: 0;
- }
+}
 
- .toUpperCase {
+.toUpperCase {
     text-transform: uppercase;
- }
+}
 
- a:hover {
+/*Style for when the cursor is passed*/
+
+a:hover {
      color: #18bc9c;
- }
- 
+}
+
 hr {
-    max-width: 250px;
     margin: 25px auto 30px;
     padding: 0;
     text-align: center;
+    border: none;
+}
+
+/*Styles for the star of Start Bootstrap Section and About Section*/
+
+.star-light {
+    box-sizing: content-box;
+    width: 250px;
+    height: 5px;
+    background-color: #fff;
+    overflow: visible;
+}
+
+.star-light::after {
+    background-color: #18bc9c;
+    position: relative;
+    font-family: FontAwesome;
+    display: inline-block;
+    font-size: 2em;
+    color: #fff;
+    top: -0.4em;
+    padding: 0 .25em;
+    content: '\f005';
+}
+
+/*Styles for the star of Profile Section and Contact Section*/
+
+.star-primary {
+    box-sizing: content-box;
+    width: 250px;
+    height: 5px;
+    background-color: #494949;
+    overflow: visible;
+}
+
+.star-primary::after {
+    background-color: #fff;
+    position: relative;
+    font-family: FontAwesome;
+    display: inline-block;
+    font-size: 2em;
+    color: #495057;
+    top: -0.4em;
+    padding: 0 .25em;
+    content: '\f005';
 }
 
 /*Styles for header*/
@@ -44,14 +88,18 @@ header {
     background-color: #2c3e50;
 }
 
-.menu span {
+.menu .text-start {
     position: absolute;
     display: inline-block;
     font-size: 2em;
-    color: #fff;
     top: 50%;
     left: 15%;
     transform: translateY(-50%);
+}
+
+.text-start a {
+    color: #fff;
+    text-decoration: none;
 }
 
 nav {
@@ -102,21 +150,14 @@ img[alt="profile"] {
 
 .container-intro {
     margin-top: 25px;
-    padding-bottom: 104px;
+    padding-bottom: 120px;
 }
 
 .text-bootstrap {
     color: #fff;
     font-size: 4.75em;
     font-weight: 900;
-}
-
-.container-profile hr {
-    display: inline-block;
-    font-size: 2em;
-    color: #fff;
-    margin-bottom: 15px;
-    border: none;
+    padding-bottom: 14px;
 }
 
 .text-developer {
@@ -124,7 +165,6 @@ img[alt="profile"] {
     color: #fff;
     font-size: 1.75em;
 }
-
 
 /*Styles for section portfolio*/
 
@@ -145,15 +185,6 @@ img[alt="profile"] {
     font-size: 3em;
     font-weight: bold;
     margin-top: 98px;
-}
-
-.container-portfolio hr {
-    display: inline-block;
-    font-size: 2em;
-    color: #212529;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    border: none;
 }
 
 .imagenes {
@@ -199,15 +230,6 @@ img[alt="profile"] {
     margin: 0;
 }
 
-.container-about hr {
-    display: inline-block;
-    font-size: 2em;
-    color: #fff;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    border: none;
-}
-
 .container-text {
     font-family: 'Lato', sans-serif;
     position: relative;
@@ -247,6 +269,8 @@ img[alt="profile"] {
     margin-top: 20px;
 }
 
+/*Style for when the cursor is passed*/
+
 .downland-button:hover{
     background-color: #fff;
     color: #18bc9c;
@@ -276,15 +300,6 @@ img[alt="profile"] {
     font-weight: 900;
     font-size: 3em;
     margin-top: 112px;
-}
-
-#contact-me hr {
-    display: inline-block;
-    font-size: 2em;
-    color: #495057;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    border: none;
 }
 
 .container-form {
@@ -342,9 +357,13 @@ img[alt="profile"] {
     outline: 0;
 }
 
+/*Style for when the cursor is passed*/
+
 .control-button button:hover {
     background: #209b82;
 }
+
+/*Style for when you press on top*/
 
 .control-button button:active {
     background: #209b82;
@@ -426,6 +445,9 @@ img[alt="profile"] {
     list-style: none;
     margin-right: 5px;
 }
+
+
+/*Style for when the cursor is passed*/
 
 .footer-col ul li a:hover {
     background: #fff;
