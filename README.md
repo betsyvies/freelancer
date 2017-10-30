@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-- El objetivo de esta pagina es hacer un pixel perfect de la página web AppLove, utilizando la estructura html y css brindada en la carpeta, así como tambien las propiedades que agregaremos.
+- El objetivo de esta pagina es hacer un pixel perfect de la página web Freelancer utilizando HTML5 para crear la estructura y CSS3 para brindar estilo a la pagina.
 
 ## Flujo de trabajo
 
