@@ -219,6 +219,8 @@ img[alt="profile"] {
     z-index: 1;
 }
 
+/*Style for when the cursor is passed*/
+
 .portfolio-item:hover .caption{
     transition: all 10s;
     opacity: 0;
@@ -380,6 +382,7 @@ img[alt="profile"] {
 .container-group textarea {
     font-family: Monserrat,sans-serif;
     background-color: transparent;
+    resize: none;
     border: none;
     outline: none;
     font-size: 1.5em;
