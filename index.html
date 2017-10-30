@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <title>Freelancer</title>
@@ -14,110 +15,181 @@
         <div class="menu">
             <span>start bootstrap</span>
             <nav>
-                <a>portfolio</a>
-                <a>about</a>
-                <a>contact</a>
+                <a href="#portfolio">portfolio</a>
+                <a href="#about">about</a>
+                <a href="#contact-me">contact</a>
             </nav>
         </div>
     </header>
-    <section class="start-bootstrap">
+    <section id="start-bootstrap">
         <div class="container-profile">
-            <div>
-                <img src="assets/images/profile.png" alt="profile">
-            </div>
-            <div class="text-bootstrap">
-                <span class="toUpperCase">start bootstrap</span>
-            </div>
-            <hr>
-            <div class="text-developer"> 
-                <span>Web Developer - Graphic Artist - User Experience Designer</span>               
+            <img src="assets/images/profile.png" alt="profile">
+            <div class="container-intro">
+                <div class="text-bootstrap">
+                    <span class="toUpperCase">start bootstrap</span>
+                </div>
+                <hr class="fa fa-star">
+                <div class="text-developer">
+                    <span>Web Developer - Graphic Artist - User Experience Designer</span>               
+                </div>
             </div>
         </div>
     </section>
-    <section class="portfolio">
+    <section id="portfolio">
         <div class="container-portfolio">
             <div class="text-portfolio">
                 <span class="toUpperCase">portfolio</span>
             </div>
-            <hr>
+            <hr class="fa fa-star">
             <div class="imagenes">
-                <img src="assets/images/portfolio/cabin.png" alt="cabin">
-                <img src="assets/images/portfolio/cake.png" alt="cake">
-                <img src="assets/images/portfolio/circus.png" alt="circus">
-                <img src="assets/images/portfolio/game.png" alt="game">
-                <img src="assets/images/portfolio/safe.png" alt="safe">
-                <img src="assets/images/portfolio/submarine.png" alt="submarine">
+                <div class="portfolio-item">
+                    <img src="assets/images/portfolio/cabin.png" alt="cabin">
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/images/portfolio/cake.png" alt="cake">
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/images/portfolio/circus.png" alt="circus">
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/images/portfolio/game.png" alt="game">
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/images/portfolio/safe.png" alt="safe">
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/images/portfolio/submarine.png" alt="submarine">
+                </div>                   
             </div>
         </div>
     </section>
-    <section class="about">
+    <section id="about">
         <div class="container-about">
-            <div class="text-about">
-                <span class="toUpperCase">about</span>
-            </div>        
-            <hr>
-            <div class="text">
-                <div class="first-text">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes
-                    the complete source files including HTML, CSS and JavaScript as well as optional LESS
-                    stylesheet for easy customizacion.
-                    </p>
-                </div>
-                <div class="second-text">
-                    <p>Whether you are a student looking to showcase your work, a professional looking to attract 
-                    clients, or a graphic artist looking to share your projects, this template is the perfect 
-                    starting point!
-                    </p>
+            <h2 class="text-center">about</h2>  
+            <hr class="fa fa-star">
+            <div class="paragraphs">
+                <div class="container-text">
+                    <div class="text">
+                        <div class="text-p">
+                            <p class="p1">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes
+                            the complete source files including HTML, CSS, and JavaScript as well as optional LESS
+                            stylesheets for easy customization.
+                            </p>
+                        </div>
+                        <div class="text-p">
+                            <p class="p2">Whether you're a student looking to showcase your work, a professional looking to attract
+                            clients, or a graphic artist looking to share your projects, this template is the perfect starting point!
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="span-button">
-                <a href="#" class="downland-button">Download Theme</a>
-                <i></i>
+                <a href="#contact" class="downland-button">
+                    <i class="fa fa-download"></i>
+                    Download Theme 
+                </a>
             </div>
         </div>
     </section>
-    <section class="contact-me">
+    <section id="contact-me">
         <div class="text-contact-me">
             <span class="toUpperCase">contact me</span>
         </div>
-        <hr>
+        <hr class="fa fa-star">
         <div class="container-form">
             <form action="">
                 <div class="control-group">
-                    <div class="container-name">
+                    <div class="container-group">
                         <label for="name">Name</label>
                         <input type="text" placeholder="Name">
                         <p></p>
                     </div>
                 </div>
                 <div class="control-group">
-                    <div class="container-email">
+                    <div class="container-group">
                         <label for="email">Email Address</label>
                         <input type="text" placeholder="Email Address">
                         <p></p>
                     </div>
                 </div>
                 <div class="control-group">
-                    <div class="container-phone">
+                    <div class="container-group">
                         <label for="phone">Phone Number</label>
                         <input type="text" placeholder="Phone Number">
                         <p></p>
                     </div>
                 </div>
                 <div class="control-group">
-                    <div class="container-message">
+                    <div class="container-group">
                         <label for="message">Message</label>
                         <textarea type="text" placeholder="Message"></textarea>
                         <p></p>
                     </div>
-                </div>              
+                </div>
+                <br>   
+                <div class="control-button">
+                    <button>Send</button>
+                </div>           
             </form>
-        <div>
-        <button>Send</button>
-        </div>
     </section>
-    <footer></footer>
-
-
+    <footer class="text-footer">
+        <div class="first-section">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h3 class="toUpperCase">location</h3>
+                        <div class="text-col">
+                            <p>3481 Melrose Place 
+                            <br>
+                            Beverly Hills CA 90210</p>
+                        </div>
+                    </div>
+                    <div  class="footer-col">
+                        <h3 class="toUpperCase">around the web</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook fa-lg" aria-hidden="true"></i> 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-google-plus fa-lg" aria-hidden="true"></i> 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-twitter fa-lg" aria-hidden="true"></i> 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i> 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-dribbble" aria-hidden="true"></i> 
+                                </a>
+                            </li>                
+                        </ul>
+                    </div>
+                    <div  class="footer-col">
+                        <h3 class="toUpperCase">about freelancer</h3>
+                        <div class="text-col">
+                            <p>
+                                Freelance is a free to use, open source Bootstrap theme created by
+                                <a href="http://startbootstrap.com">Start Bootstrap</a>
+                            </p>
+                        </div>
+                    </div>
+                </div> 
+            </div>                   
+        </div>
+        <div class="second-section">
+            <span>Copyright © Your Website 2017</span>
+        </div> 
+    </footer>
 </body>
 </html>
